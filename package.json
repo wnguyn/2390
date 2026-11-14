@@ -1,0 +1,29 @@
+{
+  "name": "cometpulse-2390",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Survey-informed UTD CometNet community reporting demo, built with Svelte, TypeScript, Bun and Elysia",
+  "scripts": {
+    "dev": "bun scripts/dev.ts",
+    "dev:api": "bun --watch server/index.ts",
+    "check": "svelte-check --tsconfig ./tsconfig.json && tsc --noEmit",
+    "build": "vite build",
+    "start": "bun server/index.ts",
+    "test": "bun test"
+  },
+  "engines": {
+    "bun": ">=1.3.0"
+  },
+  "dependencies": {
+    "elysia": "^1.4.32",
+    "svelte": "^5.57.3"
+  },
+  "devDependencies": {
+    "@sveltejs/vite-plugin-svelte": "^7.3.1",
+    "@types/bun": "^1.4.4",
+    "svelte-check": "^4.7.8",
+    "typescript": "~6.0.3",
+    "vite": "^8.3.8"
+  }
+}
